@@ -18,9 +18,12 @@ const catchNumber = () => {
     });
     bot.hears(/\/set_(.+)/, async (ctx) => {
       const rate = Number(ctx.match[1]);
-      await prisma.user.update({
+      await prisma.user.upsert({
         where: { telegramId: ctx.from.id },
-        data: {
+        update: { setFx: rate },
+        create: {
+          telegramId: ctx.from.id,
+          name: ctx.from.first_name,
           setFx: rate,
         },
       });
