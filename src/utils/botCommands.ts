@@ -8,15 +8,11 @@ export function getBotCommands(): BotCommand[] {
   const rawBotCommands = [
     {
       command: "start",
-      description: "Set/Change your name",
+      description: "See the help message",
     },
     {
-      command: "account",
-      description: "Get account information of user",
-    },
-    {
-      command: "help",
-      description: "Find out more on the bot",
+      command: "set_",
+      description: "Set your exchange rate",
     },
   ];
 

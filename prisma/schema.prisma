@@ -16,4 +16,5 @@ model User {
   name         String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @default(now()) @updatedAt
+  setFx        Float      @default(0)
 }

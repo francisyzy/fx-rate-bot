@@ -7,8 +7,7 @@ import { toEscapeHTMLMsg } from "./utils/messageHandler";
 import { printBotInfo } from "./utils/consolePrintUsername";
 
 import bot from "./lib/bot";
-import helper from "./commands/helper";
-import echo from "./commands/echo";
+import catchNumber from "./commands/catch-number";
 import catchAll from "./commands/catch-all";
 
 const index = () => {
@@ -44,8 +43,7 @@ const index = () => {
   bot.launch();
   printBotInfo(bot);
 
-  helper();
-  echo();
+  catchNumber();
 
   //Catch all unknown messages/commands
   catchAll();
