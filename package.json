@@ -1,7 +1,7 @@
 {
-  "name": "telegraf-sqlite-template",
-  "version": "0.1.1",
-  "description": "Template for creating future telegram bot apps",
+  "name": "fx-rate-bot",
+  "version": "0.1.2",
+  "description": "Simple telegram bot to get current fx rate",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/francisyzy/telegraf-sqlite-template.git"
+    "url": "git+https://github.com/francisyzy/fx-rate-bot.git"
   },
   "author": "francisyzy",
   "bugs": {
-    "url": "https://github.com/francisyzy/telegraf-sqlite-template/issues"
+    "url": "https://github.com/francisyzy/fx-rate-bot/issues"
   },
-  "homepage": "https://github.com/francisyzy/telegraf-sqlite-template#readme",
+  "homepage": "https://github.com/francisyzy/fx-rate-bot#readme",
   "engines": {
     "node": "18.x"
   },
